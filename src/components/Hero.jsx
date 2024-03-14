@@ -1,13 +1,13 @@
 import React from "react";
 
-import { logo } from "../assets";
+import { logo } from "../../public/assets";
 
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col">
-      <nav className="flex justify-between items-center w-full mb-10">
+      <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <img
-          src={"/src/assets/logo-2.png"}
+          src={"/assets/logo-2.png"}
           alt="sumz_logo"
           className="w-40 object-contain -my-10"
         />
