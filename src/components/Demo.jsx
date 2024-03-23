@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { copy, linkIcon, loader, tick } from "../../public/assets";
 import { useLazyGetSummaryQuery } from "../services/article";
 
 const Demo = () => {
@@ -68,7 +67,7 @@ const Demo = () => {
           onSubmit={handleSubmit}
         >
           <img
-            src={linkIcon}
+            src="/assets/link.svg"
             alt="link-icon"
             className="absolute left-0 my-2 ml-3 w-5"
           />
@@ -100,7 +99,11 @@ const Demo = () => {
             >
               <div className="copy_btn" onClick={() => handleCopy(item.url)}>
                 <img
-                  src={copied === item.url ? tick : copy}
+                  src={
+                    copied === item.url
+                      ? "/assets/tick.svg"
+                      : "/assets/copy.svg"
+                  }
                   alt={copied === item.url ? "tick_icon" : "copy_icon"}
                   className="w-[40%] h-[40%] object-contain"
                 />
@@ -116,7 +119,11 @@ const Demo = () => {
       {/* Display Result */}
       <div className="my-10 max-w-full flex justify-center items-center">
         {isFetching ? (
-          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+          <img
+            src="/assets/loader.svg"
+            alt="loader"
+            className="w-20 h-20 object-contain"
+          />
         ) : error ? (
           <p className="font-inter font-bold text-black text-center">
             Well, that wasn't supposed to happen...

@@ -1,21 +1,21 @@
 import React from "react";
 
-import { logo } from "../../public/assets";
-
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col">
-      <nav className="flex justify-between items-center w-full mb-10 pt-3">
-        <img
-          src={"/assets/logo-2.png"}
-          alt="sumz_logo"
-          className="w-40 object-contain -my-10"
-        />
-
+      <nav className="flex justify-between items-center w-full mb-10 mt-3">
+        <div className="flex">
+          <img
+            src="/assets/logo.svg"
+            alt="sumz_logo"
+            className="w-6 object-contain"
+          />
+          <h1 className="text-2xl font-bold pl-2 pt-1">Summify</h1>
+        </div>
         <button
           type="button"
           onClick={() =>
-            window.open("https://github.com/Abhish7k/Summize", "_blank")
+            window.open("https://github.com/Abhish7k/Summify", "_blank")
           }
           className="
           inline-block py-2 text-sm text-white bg-gray-800 px-7 hover:bg-gray-700 rounded-xl
