@@ -59,7 +59,7 @@ const Demo = () => {
   };
 
   return (
-    <section className="mt-16 w-full max-w-xl">
+    <section className="mt-16 w-full max-w-xl z-20">
       {/* Search */}
       <div className="flex flex-col w-full gap-2">
         <form
@@ -135,7 +135,7 @@ const Demo = () => {
         ) : (
           article.summary && (
             <div className="flex flex-col gap-3">
-              <h2 className="font-satoshi font-bold text-gray-600 text-xl">
+              <h2 className="font-satoshi font-bold text-gray-600 text-2xl">
                 Article <span className="blue_gradient">Summary</span>
               </h2>
               <div className="summary_box">

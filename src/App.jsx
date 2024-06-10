@@ -6,15 +6,14 @@ import "./App.css";
 const App = () => {
   return (
     <main>
-      {/* //   <main className="inset-0 -z-10 min-h-[100vh] w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"> */}
-      <div className="main">
-        <div className="gradient" />
-      </div>
-      <div></div>
+      <div class="relative w-full h-[100vh] bg-white">
+        <div class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
 
-      <div className="app">
-        <Hero />
-        <Demo />
+        <div className="app">
+          <div className="gradient" />
+          <Hero />
+          <Demo />
+        </div>
       </div>
     </main>
   );
