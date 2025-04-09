@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Demo from "./components/Demo";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./App.css";
 
